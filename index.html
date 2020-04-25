@@ -21,10 +21,12 @@
                     <div class="row">
                       <div class="criteriaBox col-8 col-md-6">
                         <!--https://html5-tutorial.net/forms/checkboxes/-->
+                        <!--https://www.w3schools.com/html/html_form_input_types.asp-->
                         <div class="criteria-text col-md-12 offset-md-3">
                           <form method="post" action="/Tests/Post">  
                             <fieldset>  
                             <legend>Please choose your criteria: </legend>  
+                            <input type="number" name="lengthOfCharacters" value="criteria" onclick="return ValidateCharSelection();">Number of characters<br>
                             <input type="checkbox" name="specialCharacters" value="criteria" onclick="return ValidateCharSelection();">Special characters<br>  
                             <input type="checkbox" name="numericCharacters" value="criteria" onclick="return ValidateCharSelection();">Numeric characters<br>  
                             <input type="checkbox" name="lowercaseCharacters" value="criteria" onclick="return ValidateCharSelection();">Lowercase characters<br> 
