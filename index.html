@@ -6,15 +6,32 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Password Generator</title>
     <link rel="stylesheet" href="style.css" />
+    <!--Added Bootstrap stylesheet-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
   </head>
   <body>
-    <div class="wrapper">
-      <header>
-        <h1>Password Generator</h1>
-      </header>
-      <div class="card">
+    
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <header>
+              <h1>Password Generator</h1>
+            </header>
+            <div class="row">
+              <div class="col-8 col-md-6">
+                <p>Please choose your criteria and click "Generate Password": </p>
+                <p>Special characters</p>
+                <p>Numeric characters</p>
+                <p>Lowercase characters</p>
+                <p>Uppercase characters</p>
+
+
+              </div>
+              <div class="col-4 col-md-6">
+                <div class="card">
         <div class="card-header">
-          <h2>Generate a Password</h2>
+          <h2>Your Password:</h2>
         </div>
         <div class="card-body">
           <textarea
@@ -29,10 +46,13 @@
         </div>
       </div>
     </div>
-
-    <div>
-      <p>*Special characters can only be the following: ! # $ % & ( )</p>
-    </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      
     <script src="script.js"></script>
   </body>
 </html>
