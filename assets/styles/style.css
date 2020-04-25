@@ -1,0 +1,59 @@
+*, *::after, *::before {
+    box-sizing: border-box;
+  }
+
+html
+{
+    background-color:black;
+}
+
+.container
+{
+  margin: 0 auto;
+  margin-top: 300px;
+  width: 500px;
+  color: black;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1.25em;
+    
+}
+.criteriaBox, .card
+{
+    background-color:  rgb(75, 141, 199);
+    padding: 10px 20px 10px;
+    margin-bottom: 10px;
+    width: 700px;
+    justify-content: center;
+    float: left;
+}
+
+header {
+    background-color: none;
+    height: 75px;
+    padding: 10px;
+    border: 1px solid white;
+  }
+  
+  aside {
+    background-color: #1D88E5;
+    width: 300px;
+    height: 400px;
+    padding: 10px;
+    border: 1px solid white;
+  }
+  
+  main {
+    background-color: #1D88E5;
+    width: 700px;
+    height: 400px;
+    padding: 10px;
+    border: 1px solid white;
+  }
+  
+  footer {
+    background-color: #1D88E5;
+    width: 1000px;
+    height: 100px;
+    padding: 10px;
+    border: 1px solid white;
+  }
