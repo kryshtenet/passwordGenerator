@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Password Generator</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="assets/styles/style.css" />
     <!--Added Bootstrap stylesheet-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
@@ -14,43 +14,40 @@
     
       <div class="container">
         <div class="row">
-          <div class="col-md-12">
+          <div class="col">
             <header>
               <h1>Password Generator</h1>
             </header>
-            <div class="row">
-              <div class="col-8 col-md-6">
-                <p>Please choose your criteria and click "Generate Password": </p>
-                <p>Special characters</p>
-                <p>Numeric characters</p>
-                <p>Lowercase characters</p>
-                <p>Uppercase characters</p>
-
-
-              </div>
-              <div class="col-4 col-md-6">
-                <div class="card">
-        <div class="card-header">
-          <h2>Your Password:</h2>
-        </div>
-        <div class="card-body">
-          <textarea
-            readonly
-            id="password"
-            placeholder="Your Secure Password"
-            aria-label="Generated Password"
-          ></textarea>
-        </div>
-        <div class="card-footer">
-          <button id="generate" class="btn">Generate Password</button>
-        </div>
-      </div>
-    </div>
-              </div>
-            </div>
+                    <div class="row">
+                      <div class="criteriaBox col-8 col-md-6">
+                        <!--https://html5-tutorial.net/forms/checkboxes/-->
+                        <div class="criteria-text col-md-12 offset-md-3">
+                          <form method="post" action="/Tests/Post">  
+                            <fieldset>  
+                            <legend>Please choose your criteria: </legend>  
+                            <input type="checkbox" name="specialCharacters" value="criteria" onclick="return ValidateCharSelection();">Special characters<br>  
+                            <input type="checkbox" name="numericCharacters" value="criteria" onclick="return ValidateCharSelection();">Numeric characters<br>  
+                            <input type="checkbox" name="lowercaseCharacters" value="criteria" onclick="return ValidateCharSelection();">Lowercase characters<br> 
+                            <input type="checkbox" name="uppercaseCharacters" value="criteria" onclick="return ValidateCharSelection();">Uppercase characters<br>  
+                                <br>  
+                            <input type="submit" id = "generate" value="Submit">  
+                            </fieldset>  
+                        </form>
+                        </div> 
+                      </div>
+                      
+                      <div class="col-4 col-md-6">
+                          <div class="card">
+                            <div class="card-header"><h2>Your Password:</h2></div>
+                            <div class="card-body"><textarea readonly id="password" placeholder="Your Secure Password" aria-label="Generated Password"></textarea></div>
+                            <div class="card-footer"><!-- <button id="generate" class="btn">Generate Password</button> --></div>
+                          </div>
+                      </div>
+                    </div>
           </div>
         </div>
       </div>
+    
       
       
     <script src="script.js"></script>
